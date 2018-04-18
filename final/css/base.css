@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+body { background-color: #fff;}
+			
+#page_wrap {
+	width: 100%;
+	padding-top: 120px;
+	position: relative;
+	overflow: hidden;}
+	
+#header {
+	width: 100%;
+	height: 100px;
+	padding-top: 20px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 10;}
+	
+	#header .btn {
+		display: block;
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		top: 0px;
+		right: 0px;}
+	
+	#header .dbg {
+		width: 100%;
+		height: 160px;
+		display: none;
+		position: absolute;
+		top: 120px;
+		left: 0px;
+		background-color: #767d82;
+		z-index: 0;}
+		
+		#header .dbg img { display: block; position: absolute; top: 0px; left: 50%; margin-left: -600px;}
+	
+	#page_wrap .hd_on {}
+		
+	#page_wrap .hd_on .dbg { display: block;}	
+
+.quick_menu { width: 86px; height: 345px; background: url(../img/common/quick_menu.png) no-repeat 0px 0px; position: absolute; top: 237px; right: 17px; z-index: 10; }
+.quick_menu li.menu { width: 100%; height: 86px; position: relative;}
+.quick_menu li.list_02 { width: 100%; height: 86px; position: relative;}
+.quick_menu li.list_05 { height: 33px;}
+.quick_menu li.menu a { width: 100%; height: 100%; display: block; background: url(../img/common/ir_img.gif) repeat top left;}
+
+
+.soundPlayer {
+	width: 86px;
+	height: 86px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 9;}
+	
+	.soundPlayer h3, .soundPlayer ul, .soundPlayer a
+		{ display: block;}
+	.soundPlayer img {display:block;}
+	.soundPlayer .jp-jplayer {width:0;height:0;}
+	.soundPlayer .jp-audio {position:absolute;top: 40px; left: 14px;}
+	.soundPlayer .jp-audio .jp-controls { overflow: hidden; width: 66px; height: 31px;}
+	.soundPlayer .jp-audio .jp-controls li {float:left;}
+	.soundPlayer .jp-audio .jp-controls a{display:block;width: 28px;height: 28px;overflow:hidden;text-indent:-1000px;padding:0 0 0 2px;}
+	.soundPlayer .jp-audio .jp-controls a.jp-play{background:url(../img/soundplayer/btn_play.png) no-repeat 0 0;}
+	.soundPlayer .jp-audio .jp-controls a.jp-pause{background:url(../img/soundplayer/btn_pause.png) no-repeat 0 0;}
+	.soundPlayer .jp-audio .jp-controls a.jp-stop{background:url(../img/soundplayer/btn_stop.png) no-repeat 0 0;}
+
+	
+	.nav_wrap { width: 1200px; margin: 0px auto; position: relative;}
+	
+		.nav_wrap .ps { display: block; position: absolute; top: 0px; right: 0px;}
+		
+		.nav_wrap h1 {
+			width: 150px;
+			height: 80px;
+			float: left;
+			margin-left: 10px;
+			margin-right: 10px;}
+			
+			
+				
+	.nav {
+		width: 850px;
+		height: 100px;
+		z-index: 9;
+		float: left;}
+		
+		.nav .one_d { float: left; position: relative; width: 170px; height: 100%; }
+		
+		/*.nav .one_04,
+		.nav .one_05 { width: 160px;}
+		.nav .one_03, 
+		.nav .one_07 { width: 150px;}
+		.nav .one_06 { width: 220px;}*/
+		
+		.nav .one_d h3 { width: 100%;} 
+			
+			.nav .one_d h3 a {
+				width: 100%;
+				height: 100px;
+				display: block;
+				background: url(../img/common/nav_off.gif) no-repeat 0px 0px;}
+				
+				
+			.nav .one_d h3 a:hover,
+			.nav .one_d h3 a:focus,
+			.nav .one_d h3 a.on { background-image: url(../img/common/nav_on.gif);}
+			
+			.nav .one_02 h3 a { background-position: -170px 0px; }
+			.nav .one_03 h3 a { background-position: -340px 0px; }
+			.nav .one_04 h3 a { background-position: -510px 0px; }
+			.nav .one_05 h3 a { background-position: -680px 0px; }
+			.nav .one_06 h3 a { background-position: -750px 0px; }
+	
+			
+	.nav .two_d { 
+		width: 130px;
+		padding-top: 10px;
+		margin: 0px auto;
+		position: relative;
+		z-index: 5;}
+		
+	.nav .two_01,
+	.nav .two_02 { left: -10px;}
+	.nav .two_03 { left: -5px;}
+		
+		
+		.nav .two_d li {
+			width: 100%;
+			height: 25px;
+			margin-bottom: 2px;
+			overflow: hidden;}
+					
+
+			.nav .two_d a {
+				width: 100%;
+				height: 25px;
+				display: inline-block;
+				font-family: 'Nanum Square', sans-serif;
+				color: #fff;
+				text-align: center;
+				line-height: 24px;
+				font-size: 15px;
+				font-weight: bold;
+				letter-spacing: -0.5px;}
+				
+			.nav .two_d a.on,
+			.nav .two_d a:hover,
+			.nav .two_d a:focus { text-decoration: underline; transition: all .5s;}
+			
+			
+	
+.nav_wrap .link_wrap {
+	width: 123px;
+	height: 38px;
+	position: absolute;
+	top: 25px;
+	right: -1px;
+	background: url(../img/common/link_img.gif) no-repeat top left;}		
+	
+	.nav_wrap .link_wrap a {
+		display: block;
+		width: 41px;
+		height: 100%;
+		background: url(../img/common/ir_img.gif) repeat top left;
+		float: left;}
+		
+#footer {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	background-color: #fff;}
+#footer .admin { display: block; position: absolute; width: 74px; height: 20px; background: url(../img/common/ir_img.gif) repeat top left; position: absolute; top: 48px; left: 50%; margin-left: 524px;}	
+

@@ -1,0 +1,363 @@
+@charset "utf-8";
+
+@import "reset.css";
+@import "default.css";
+@import "base.css";
+@import "sub_base.css";
+
+.gui3 a {
+	width: 540px;
+	height: 87px;
+	display: block;
+	background: url(../img/common/ir.gif) repeat top left;
+	position: absolute;}
+
+.gui3 a.btn_01 { top: 229px; left: 42px;}
+.gui3 a.btn_02 { top: 229px; left: 619px;}
+.gui3 a.btn_03 { top: 342px; left: 42px;}
+.gui3 a.btn_04 { top: 342px; left: 619px;}
+
+
+/*Special Location*/
+
+.pre1 .btn {
+	width: 165px;
+	height: 41px;
+	display: block;
+	background: url(../img/common/ir_img.gif) repeat top left;
+	position: absolute;
+	top: 570px;
+	left: 147px;}
+
+.pre1 .zoom {
+	width: 706px;
+	height: 700px;
+	position: absolute;
+	top: 50px;
+	left: 0px;}
+	
+	.pre1 .zoom .btn2 {
+		width: 62px;
+		height: 62px;
+		display: block;
+		background: url(../img/common/ir_img.gif) repeat top left;
+		position: absolute;
+		top: 42px;
+		left: 575px;}
+		
+.pre1 .link_01 {
+	width: 265px;
+	height: 370px;
+	display: block;
+	background: url(../img/common/ir_img.gif) repeat top left;
+	position: absolute;
+	top: 750px;
+	left: 0px;}
+
+.pre1 .link_02 {
+	width: 265px;
+	height: 370px;
+	display: block;
+	background: url(../img/common/ir_img.gif) repeat top left;
+	position: absolute;
+	top: 750px;
+	left: 280px;}
+
+.pre1 .link_03 {
+	width: 265px;
+	height: 370px;
+	display: block;
+	background: url(../img/common/ir_img.gif) repeat top left;
+	position: absolute;
+	top: 750px;
+	left: 556px;}
+
+.pre1 .link_04 {
+	width: 265px;
+	height: 370px;
+	display: block;
+	background: url(../img/common/ir_img.gif) repeat top left;
+	position: absolute;
+	top: 750px;
+	right: 0px;}
+
+
+/*입주자 모집공고*/
+
+.pri .btn {
+	width: 260px;
+	height: 50px;
+	display: block;
+	background: url(../img/common/ir_img.gif) repeat top left;
+	position: absolute;}
+
+.pri .btn_01 {
+	left: 348px;
+	top: 411px;}
+
+.pri .btn_02 {
+	left: 636px;
+	top: 411px;
+	width: 220px;}
+
+/*당첨자 발표*/
+
+.pri .tab_wrap li {
+	width: 150px;
+	height: 34px;
+	float: left;}
+
+.pri .tab_wrap li.list_02,
+.pri .tab_wrap li.list_04 { width: 149px;}
+.pri .tab_wrap li.list_06 { width: 146px;}
+
+	.pri .tab_wrap li a {
+		width: 100%;
+		height: 100%;
+		display: block;
+		background: url(../img/parcel/prize_tab_off.gif)}
+
+	.pri .tab_wrap li a.on { background-image: url(../img/parcel/prize_tab_on.gif);}
+	
+	.pri .tab_wrap li.list_02 a { background-position: -150px 0px;}
+	.pri .tab_wrap li.list_03 a { background-position: -299px 0px;}
+	.pri .tab_wrap li.list_04 a { background-position: -449px 0px;}
+	.pri .tab_wrap li.list_05 a { background-position: -598px 0px;}
+	.pri .tab_wrap li.list_06 a { background-position: -748px 0px;}
+ 	
+
+/*당첨자발표*/
+
+.prize .submit_box {
+	width: 900px;
+	height: 530px;
+	background: url(../img/sellinfo/prize_01.jpg) no-repeat top left;
+	position: relative;}
+	
+	.prize .submit_box li {
+		width: 100px;
+		position: absolute;
+		top: 287px;
+		left: 360px;}
+		
+	.prize .submit_box li.list_02 { top: 317px;}
+	
+	.prize .submit_box input {
+		width: 80px;
+		height: 16px;
+		padding: 0px;
+		border: none;
+		font-size: 12px;
+		background-color: #eee;
+		color: #6d6d6d;}
+
+	.prize .submit_box .list_02 input { font-weight: bold;}
+		
+	.prize .submit_box .btn_01 {
+		width: 180px;
+		height: 51px;
+		display: block;
+		background: url(../img/common/ir_img.gif) repeat top left;
+		position: absolute;
+		top: 285px;
+		left: 462px;}
+
+	.prize .submit_box .btn_02 {
+		width: 110px;
+		height: 40px;
+		display: block;
+		background: url(../img/common/ir_img.gif) repeat top left;
+		position: absolute;
+		top: 164px;
+		left: 568px;}
+
+
+
+/*모집공고*/
+
+.occ .btn_01 {
+	width: 295px;
+	height: 48px;
+	display: block;
+	background: url(../img/common/ir.gif) repeat top left;
+	position: absolute;
+	top: 39px;
+	left: 607px;}
+
+.occ .btn_02 {
+	width: 156px;
+	height: 36px;
+	display: block;
+	background: url(../img/common/ir.gif) repeat top left;
+	position: absolute;
+	top: 642px;
+	left: 24px;}
+
+.news .clearBox { clear: both; display: block; height: 0px;}
+
+.news table {
+	width: 100%;
+	color: #454545;
+	margin-bottom: 40px;
+	border-top: 3px solid #0162b1;}
+	
+	.news th { 
+		height: 40px;
+		font-family: 'Nanum Gothic', sans-serif;
+		color: #fff;
+		font-size: 13px;
+		letter-spacing: -1px;
+		background-color: #f2f2f2;
+		color: #4d4d4d;
+		border-bottom: 1px solid #e4e4e4;
+		border-top: 1px solid #e4e4e4;}
+	
+	.news td {
+		height: 39px;
+		text-align: center;
+		color: #888;
+		border-bottom: 1px solid #e4e4e4;}
+		
+	.news td.download { text-align: left;}
+		
+	.news table td.tit {
+		padding: 0px 10px;
+		text-align: left;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		font-family: 'Nanum Gothic', sans-serif;
+		font-size: 14px;
+		letter-spacing: -1px;
+		color: #454545;}
+		
+		.news table a { 
+			color: #797979; 
+			margin-left: 5px;}
+			
+			.news .tit a span { font-weight: bold;  color: #A79B86;}
+			.news .tit span.notice { font-weight: bold;  color: #8c6595;}
+		
+		.news table a:hover,
+		.news table a:focus {text-decoration: underline;}
+		
+	.news table td.media { color: #008ad1; font-weight: bold;}		
+		
+		.news table td.tit img { margin-left: 5px; vertical-align: middle; margin-right: 10px;}
+
+/*공지사항*/
+
+.nview table td.tit { background-color: #f2f2f2; color: #5e5e5e; font-size: 14px; font-weight: bold; padding-left: 15px;}
+
+.nview td { text-align: left;}
+
+.nview td strong {
+	width: 70px;
+	display: inline-block;
+	text-align: center;
+	color: #3d3d3d}
+
+.news .comment { 
+	padding: 20px 20px 30px; 
+	text-align: left;
+	font-family: 'Nanum Gothic', sans-serif;
+	color: #777;
+	font-size: 13px;
+	line-height: 22px;
+	letter-spacing: -1px;}
+	
+	.news .comment img { max-width: 100%; margin-bottom: 20px;}
+
+.news .btn_wrap { text-align: center;}
+
+/*검색*/
+
+.ps_wrap { width: 750px; margin: 0px auto;}
+
+.search_wrap {
+	width: 250px;
+	height: 23px;
+	float: left; 
+	margin-right: 50px;}
+	
+	.search_wrap input {
+		width: 170px;
+		height: 16px;
+		padding: 3px 10px 4px;
+		border: none;
+		font-family:"돋움", sans-serif;
+		color: #878686;
+		line-height: 16px;
+		font-size: 11px;
+		background-color: #eceded;
+		display: block;
+		float: left;}
+		
+	.search_wrap a {
+		display: inline-block;
+		width: 54px;
+		height: 23px;}
+
+
+.paging_wrap {
+	width: 100%; 
+	text-align: center;}
+	
+	.paging_wrap a { display: inline-block; vertical-align: middle;}
+	
+	.paging_wrap .p_btn {
+		margin-right: 16px;}
+	
+	.paging_wrap .n_btn {
+		margin-left: 16px;}
+		
+	.paging_wrap .first {
+		margin-right: 16px;}
+	
+	.paging_wrap .last {
+		margin-left: 16px;}
+		
+	.paging_wrap .num {
+		width: 17px;
+		height: 19px;
+		text-align: center;
+		padding: 0px 2px;
+		border: 1px solid #e7e7e7;
+		color: #7d7d7d;
+		font-family:"돋움", sans-serif;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 20px;
+		margin-right: 2px;
+		background-color: #fff;}
+		
+	.paging_wrap a.num:hover,
+	.paging_wrap a.num:focus,
+	.paging_wrap a.on {
+		border: 1px solid #0162b1;
+		background-color: #0162b1;
+		color: #fff;}
+		
+		.paging_wrap a img { vertical-align: top;}
+
+
+/*인터넷청약*/
+
+
+.sub .btn_01 {
+	width: 235px;
+	display: block;
+	background: url(../img/common/ir_img.gif) repeat top left;
+	position: absolute;
+	height: 40px;
+	top: 150px;
+	left: 130px;}
+
+.sub .btn_02 {
+	width: 235px;
+	display: block;
+	background: url(../img/common/ir_img.gif) repeat top left;
+	position: absolute;
+	height: 40px;
+	top: 150px;
+	left: 577px;}

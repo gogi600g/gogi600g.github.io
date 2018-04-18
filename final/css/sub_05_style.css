@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+@import "reset.css";
+@import "default.css";
+@import "base.css";
+@import "sub_base.css";
+
+/*인테리어*/
+
+.w3-animate-opacity{animation:opac 0.3s}@keyframes opac{from{opacity:0} to{opacity:1}}
+
+.int .tab_wrap {
+	width: 100%;
+	height: 44px;
+	margin-bottom: 30px;}
+	
+	.int .tab_wrap li {
+		width: 475px;
+		height: 44px;
+		float: left;}
+		
+		.int .tab_wrap li a {
+			width: 100%;
+			height: 100%;
+			display: block;
+			background: url(../img/household/int_tab_off.gif) no-repeat top left;}
+			
+		.int .tab_wrap li a.on { background-image: url(../img/household/int_tab_on.gif);}
+		
+		.int .tab_wrap li.list_02 a { background-position: -475px 0px;}
+		.int .tab_wrap li.list_03 a { background-position: -552px 0px;}
+		.int .tab_wrap li.list_04 a { background-position: -730px 0px;}
+
+/*유니트*/
+
+.unit .tab_wrap {
+	width: 100%;
+	height: 44px;
+	margin-bottom: 30px;}
+	
+	.unit .tab_wrap li {
+		width: 315px;
+		height: 44px;
+		float: left;}
+		
+	.unit .tab_wrap li.list_02 { width: 320px;}
+		
+	
+		.unit .tab_wrap li a {
+			width: 100%;
+			height: 100%;
+			display: block;
+			background: url(../img/household/unit_tab_off.gif) no-repeat top left;}
+			
+		.unit .tab_wrap li a.on { background-image: url(../img/household/unit_tab_on.gif);}
+		
+		.unit .tab_wrap li.list_02 a { background-position: -315px 0px;}
+		.unit .tab_wrap li.list_03 a { background-position: -635px 0px;}
+		.unit .tab_wrap li.list_04 a { background-position: -600px 0px;}
+		.unit .tab_wrap li.list_05 a { background-position: -800px 0px;}
+		.unit .tab_wrap li.list_06 a { background-position: -1000px 0px;}
+		.unit .tab_wrap li.list_07 a { background-position: -1200px 0px;}
+		.unit .tab_wrap li.list_08 a { background-position: -854px 0px;}
+		.unit .tab_wrap li.list_09 a { background-position: -978px 0px;}
+
+.unit .tab_box { position: relative;}
+
+.unit .btn_01 {
+	display: block;
+	width: 280px;
+	height: 50px;
+	display: block;
+	background: url(../img/common/ir.gif) repeat top left;
+	position: absolute;
+	bottom: 175px;
+	right: 0px;}
+ 
+
+/*e모델하우스*/
+
+.mod .btn {
+	display: block;
+	width: 86px;
+	height: 55px;
+	display: block;
+	background: url(../img/common/ir.gif) repeat top left;
+	position: absolute;}
+ 
+.mod .btn_01 { top: 547px; left: 298px; width: 256px;}
+.mod .btn_02 { top: 547px; left: 793px;}
+.mod .btn_03 { top: 547px; left: 878px;}
+.mod .btn_04 { top: 488px; left: 297px;}
+
+
+
+
+
+
+
+
+
+
+
+
+

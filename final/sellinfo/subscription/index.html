@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="keywords" content="제일풍경채, 서울항동, 제일건설, 분양">
+<meta name="description" content="서울 속 에코 프리미엄, 항동지구 7블록, 총345세대, 분양문의" />
+<title>서울항동 제일풍경채</title>
+<link rel="shortcut icon" href="/img/favicon/favicon.ico" type="image/x-icon" />
+<link href="/final/css/sub_02_style.css" type="text/css" rel="stylesheet" charset="utf-8" media="all" />
+<link href="/final/css/print.css" type="text/css" rel="stylesheet" charset="utf-8" media="print" />
+<script src="/code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="/final/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/final/js/css.browser.detect.js"></script>
+<script type="text/javascript" src="/final/js/jquery.jplayer.min.js"></script><!-- 플러그인 -->
+<script type="text/javascript">
+	$(window).load(function(){
+		$(document).ready(function(){
+
+			$("#jquery_jplayer_1").jPlayer({
+				ready: function (event) {
+					$(this).jPlayer("setMedia", {
+						mp3: "/final/img/cm/cm.mp3",
+						oga: "/final/img/cm/cm.ogg"	//ios 사운드파일
+					}).jPlayer("stop");
+				},
+				supplied: "mp3, oga",
+				smoothPlayBar: true,
+				keyEnabled: true,
+				remainingDuration: true,
+				toggleDuration: true
+			});
+		});
+	});
+</script>
+
+<script type="text/javascript">
+jQuery(init);
+
+function init($) {
+		 _setting();
+	};
+
+function _setting(){
+
+	var $body 		= $('body'),
+		$page 		= $body.find('div#page_wrap'),
+		$header 	= $page.find('#header'),
+		$content 	= $page.find('div#content_wrap'),
+		$nav_1d 	= $page.find('ul.nav'),
+		$1d_li 		= $nav_1d.find('>li'),
+		$1d_link 	= $1d_li.find('h3 a'),
+		$nav_2d 	= $page.find('ul.two_d'),
+		$2d_link 	= $nav_2d.find('a'),
+		$sub_menu 	= $page.find('ul.sub_menu'),
+		$sub_link 	= $sub_menu.find('a'),
+		set_num1 	= 2 - 1,
+		set_num2 	= 2 - 1,
+		set_num3 	= 2,
+		$loc_title 	= $page.find('.top_con h3 span'),
+		$loc_nth_01 = $page.find('.top_con a.prev_btn'),
+		$loc_nth_02 = $page.find('.top_con a.next_btn'),
+		$main_con 	= $page.find('#content_wrap'),
+		$nav_bg			= $page.find('#header span.dbg');
+		$target		= $('.one_d').eq(set_num1).find('li').eq(set_num2),
+		prev_href	= ($target.prev().length ? $target.prev().find('a').attr('href') : $target.parent().find('li:last-child').find('a').attr('href')),
+		next_href	= ($target.next().length ? $target.next().find('a').attr('href') : $target.parent().find('li:first-child').find('a').attr('href'));
+
+		//네비게이션 원뎁스 셀렉트 위치 설정
+
+		//네비게이션 투뎁스 셀렉트 위치 설정
+		//$1d_link.eq(set_num1).addClass('on');
+		//$sub_link.eq(set_num2).addClass('on');
+		//$1d_link.eq(set_num1).addClass('on');
+		//$1d_link.eq(set_num1).parent().next().removeClass('hide');
+		//$1d_link.eq(set_num1).parent().next().find('a').eq(set_num2).addClass('on');
+
+		$('.con_wrap').mouseover(function(){
+				$1d_link.removeClass('on');
+				$nav_2d.addClass('hide');
+				//$nav_bg.css('display', 'none');
+				$header.removeClass('hd_on');
+			});
+
+		//로케이션 타이틀 설정
+		$loc_title.text($target.find('span').text());
+		//$loc_nth_01.text($('.nav h3').eq(set_num1).find('span').text());
+		//$loc_nth_02.text($('.sub_wrap a.s_menu span').text());
+
+		$loc_nth_01.attr('href', prev_href);
+		$loc_nth_02.attr('href', next_href);
+};
+</script>
+
+<script type="text/javascript" src="/final/js/page_setting.js"></script>
+<script type="text/javascript" src="/final/js/jquery.flashObj.min.js"></script>
+</head>
+
+<body>
+<div id="page_wrap">
+<div id="header">
+	<div class="nav_wrap">
+		<h1><a href="/"><img src="/final/img/common/logo.gif" alt="구로항동 제일풍경채" /></a></h1>
+        <ul class="nav clear">
+            <li class="one_d one_01">
+                <h3><a href="/final/business/summary" class="ir"><span>사업안내</span></a></h3>
+                <ul class="two_d hide two_01">
+                    <li class="list_01"><a href="/final/business/summary" class=""><span>사업개요</span></a><img src="/final/img/common/slash.gif"  /></li>
+                    <li class="list_02"><a href="/final/business/brand" class=""><span>브랜드소개</span></a><img src="/final/img/common/slash.gif"  /></li>
+                    <li class="list_03"><a href="/final/business/pr" class=""><span>항공홍보 영상</span></a><img src="/final/img/common/slash.gif"  /></li>
+                    <li class="list_04"><a href="/final/business/location" class=""><span>오시는길</span></a><img src="/final/img/common/slash.gif"  /></li>
+                    <!--<li class="list_05"><a href="/final/customer/interest" class=""><span>관심고객등록</span></a><img src="/final/img/common/slash.gif"  /></li>-->
+                    <li class="list_06"><a href="/final/customer/news" class=""><span>언론보도</span></a></li>
+                </ul>
+            </li>
+            <li class="one_d one_02">
+                <h3><a href="/final/sellinfo/schedule" class="ir"><span>분양안내</span></a></h3>
+                <ul class="two_d hide two_02">
+                    <li class="list_01"><a href="/final/sellinfo/schedule" class=""><span>분양일정</span></a><img src="/final/img/common/slash.gif"  /></li>
+                    <li class="list_02"><a href="/final/sellinfo/subscription" class=""><span>인터넷 청약</span></a><img src="/final/img/common/slash.gif"  /></li>
+                    <li class="list_03"><a href="/final/sellinfo/occupant" class=""><span>입주자모집공고</span></a><img src="/final/img/common/slash.gif"  /></li>
+                    <!--<li class="list_04"><a href="/final/sellinfo/prizewinner" class=""><span>당첨자조회</span></a><img src="/final/img/common/slash.gif"  /></li>-->
+                    <li class="list_05"><a href="/final/customer/notice" class=""><span>공지사항</span></a></li>
+                </ul>
+            </li>
+            <li class="one_d one_03">
+                <h3><a href="/final/premium/premium1" class="ir"><span>프리미엄</span></a></h3>
+                <ul class="two_d hide two_03">
+                    <li class="list_01"><a href="/final/premium/premium1" class=""><span>입지 프리미엄</span></a><img src="/final/img/common/slash.gif"  /></li>
+                    <li class="list_02"><a href="/final/premium/premium2" class=""><span>단지 프리미엄</span></a></li>
+                </ul>
+            </li>
+            <li class="one_d one_04">
+                <h3><a href="/final/complex/chart" class="ir"><span>단지안내</span></a></h3>
+                <ul class="two_d hide two_04">
+                    <li class="list_01"><a href="/final/complex/chart" class=""><span>단지 동ㆍ호 배치도</span></a><img src="/final/img/common/slash.gif"  /></li>
+                    <li class="list_02"><a href="/final/complex/community" class=""><span>커뮤니티</span></a></li>
+                </ul>
+            </li>
+            <li class="one_d one_05">
+                <h3><a href="/final/household/unit" class="ir"><span>세대안내</span></a></h3>
+                <ul class="two_d hide two_05">
+                	<li class="list_01"><a href="/final/household/unit" class=""><span>유니트 안내</span></a><img src="/final/img/common/slash.gif"  /></li>
+                	<li class="list_02"><a href="/final/household/interior" class=""><span>인테리어</span></a><img src="/final/img/common/slash.gif"  /></li>
+                    <li class="list_03"><a href="/final/household/emodelhouse" class=""  onclick="window.open('/vr/01_liv.html', 'modelhouse_pc', 'width=980, height=724, scrollbars=no, toolbar=no, menubar=no');return false;"><span>e-모델하우스</span></a></li>
+                </ul>
+            </li>
+        </ul>
+        <img src="/final/img/common/call.gif" class="ps" />
+    </div>
+    <span class="dbg"></span>
+</div>
+<div id="content_wrap">
+<div class="con_wrap clear">
+    <div class="top_con">
+        <h3 class="tit_02_02 ir"><span></span></h3>
+        <div class="btn_wrap">
+            <a href="#" class="prev_btn ir"><span>이전 페이지</span></a>
+            <a href="#" class="next_btn ir"><span>다음 페이지</span></a>
+        </div>
+        <img src="/final/img/common/tit_txt.gif" alt="" />
+    </div>
+	<div class="main_con">
+
+
+<!--각페이지 컨텐츠 입력-->
+<div class="content sub">
+    <img src="/final/img/sellinfo/subscription_01.gif" class="mb_45"/>
+    <img src="/final/img/sellinfo/subscription_02.gif" class="mb_0"/>
+    <a href="https://www.kbstar.com/" class="btn_01 ir" target="_blank"><span>kb국민은행 바로가기</span></a>
+    <a href="https://www.apt2you.com/" class="btn_02 ir" target="_blank"><span>아파트투유 바로가기</span></a>
+</div>
+
+<!--bottom-->
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+	<img src="/final/img/common/footer_img.gif" alt="" />
+    <a href="/admin/" class="admin ir" target="_blank"><span>관리자페이지</span></a>
+</div>
+</div>
+
+</body>
+</html>

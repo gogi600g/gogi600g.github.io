@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+body { background-color: #f3f3f3;}
+
+#header { background-color: #fff; border-bottom: 1px solid #d9d9d9;}			
+
+#content_wrap {
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 50px;
+	position: relative;
+	background-color: #fff;}
+					
+.con_wrap {
+	width: 1200px;
+	margin: 0px auto;
+	position: relative;}		
+					
+	.top_con {
+		width: 200px;
+		float: left;
+		margin-right: 50px;
+		position: relative;}
+		
+		.top_con .prev_btn {
+			width: 39px;
+			height: 39px;
+			display: block;
+			float: left;
+			background: url(../img/common/prev_btn.gif) no-repeat 0px 0px;}
+		
+		.top_con .next_btn {
+			width: 39px;
+			height: 39px;
+			display: block;
+			float: left;
+			display: inline-block;
+			background: url(../img/common/next_btn.gif) no-repeat top left;}
+			
+		
+		.top_con h3 {
+			width: 100%;
+			height: 41px;
+			margin-bottom: 20px;
+			padding-top: 27px;
+			border-top: 4px solid #0162b1;}
+		
+		.top_con h3 span {background: url(../img/common/mtitle.png) no-repeat top left; width: 100%; height: 40px; display: block;}	
+		.top_con h3.tit_01_02 span { background-position: 0px -50px;}
+		.top_con h3.tit_01_03 span { background-position: 0px -100px;}
+		.top_con h3.tit_01_04 span { background-position: 0px -150px;}
+		.top_con h3.tit_01_05 span { background-position: 0px -200px;}
+		.top_con h3.tit_01_06 span { background-position: 0px -250px;}
+		
+		.top_con h3.tit_02_01 span { background-position: 0px -500px;}
+		.top_con h3.tit_02_02 span { background-position: 0px -550px;}
+		.top_con h3.tit_02_03 span { background-position: 0px -600px;}
+		.top_con h3.tit_02_04 span { background-position: 0px -650px;}
+		.top_con h3.tit_02_05 span { background-position: 0px -700px;}
+			
+		.top_con h3.tit_03_01 span { background-position: 0px -750px;}
+		.top_con h3.tit_03_02 span { background-position: 0px -800px;}
+		.top_con h3.tit_03_03 span { background-position: 0px -850px;}
+		.top_con h3.tit_03_04 span { background-position: 0px -900px;}
+		.top_con h3.tit_03_05 span { background-position: 0px -950px;}
+			
+		.top_con h3.tit_04_01 span { background-position: 0px -1000px;}
+		.top_con h3.tit_04_02 span { background-position: 0px -1050px;}
+		.top_con h3.tit_04_03 span { background-position: 0px -1100px;}
+		.top_con h3.tit_04_04 span { background-position: 0px -1150px;}
+		.top_con h3.tit_04_05 span { background-position: 0px -1200px;}
+			
+		.top_con h3.tit_05_01 span { background-position: 0px -1250px;}
+		.top_con h3.tit_05_02 span { background-position: 0px -1300px;}
+		.top_con h3.tit_05_03 span { background-position: 0px -1350px;}
+		.top_con h3.tit_05_04 span { background-position: 0px -1400px;}
+		.top_con h3.tit_05_05 span { background-position: 0px -1450px;}
+			
+		.top_con .btn_wrap { width: 80px; height: 39px; margin-bottom: 49px;}
+			
+
+.main_con {
+	width: 950px;
+	float: left;
+	position: relative;}
+	
+		
+.content { position: relative; min-height: 600px; width: 100%;}
+
+.testCon { display: none;}
+
+#footer {background-color: #f3f3f3;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

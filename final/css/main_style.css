@@ -1,0 +1,117 @@
+@import "reset.css";
+@import "default.css";
+@import "base.css";
+
+@charset "utf-8";
+#page_wrap { }
+
+#content_wrap { width: 100%; padding-bottom: 50px;  position: relative; background-color: #eaeaea;}
+
+.visual_wrap {width: 100%; height: 850px;  overflow: hidden; position: relative;}
+.rolling_wrap {width: 100%; height: 100%; position: relative;}
+.rolling_wrap ul { width: 100%; height: 100%; position: relative;}
+.rolling_wrap li {	width: 100%; height: 100%; position: absolute; top: 0px; left: 0px;	display: block; visibility: hidden;	overflow: hidden;}
+.rolling_wrap li.view { visibility: visible; }
+.rolling_wrap li img.vsImg {display: block;	position: relative;	left: 50%; width: 2400px; margin-left: -1200px;}
+					
+.rolling_wrap li.list_01 img.vsTxt1 {display: block; position: absolute; top: 0px; left: 50%; opacity: 0; margin-left: -160px; transition: all 2s;}
+.rolling_wrap li.list_01 img.vsTxt2 {display: block; position: absolute; top: 45px; left: 50%; opacity: 0; margin-left: -228px;  transition: all 2s ease .3s;}
+.rolling_wrap li.list_01 img.vsTxt3 {display: block; position: absolute; top: 112px; left: 50%; opacity: 0; margin-left: -170px;  transition: all 2s ease .6s;}
+	
+.rolling_wrap li.list_02 img.vsTxt1 {display: block; position: absolute; top: -3px; left: 50%; opacity: 0; margin-left: -270px; transition: width 4s, margin-left 4s;}
+.rolling_wrap li.list_02 img.vsTxt2 {display: block; position: absolute; top: 134px; left: 50%; opacity: 0; margin-left: -191px; transition: opacity 2s ease .5s, top 2s ease .5s;}
+	
+.rolling_wrap li.view img.vsImg { width: 1920px; margin-left: -960px; transition: all 4s;}
+.rolling_wrap li.view.list_01 img.vsTxt1 { opacity:1; top: 50px; transition: all 2s;}
+.rolling_wrap li.view.list_01 img.vsTxt2 { opacity:1; top: 95px; transition: all 2s ease .3s; }
+.rolling_wrap li.view.list_01 img.vsTxt3 { opacity:1; top: 162px; transition: all 2s ease .6s; }
+.rolling_wrap li.view.list_02 img.vsTxt1 { opacity:1; top: 47px; transition: all 2s; }
+.rolling_wrap li.view.list_02 img.vsTxt2 { opacity:1; top: 184px; transition: all 2s ease .5s;}
+									
+				
+		.num_list {
+			width: 100%;
+			height: 1px;
+			position: absolute;
+			left: 0px;
+			top: 60px;
+			z-index: 8;}
+			
+			.num_list .wrap {
+				width: 100%;
+				height: 1px;
+				max-width: 1750px;
+				margin: 0px auto;
+				position: relative;}
+			
+			.num_list a { 
+				width: 8px;
+				height: 8px;
+				border: 3px solid #fff;
+				display: block;
+				position: absolute;
+				top: 0px;
+				right: 25px;
+				border-radius: 7px;}
+				
+			.num_list a.nth_02 { top: 20px;}
+				
+			.num_list a.on { background-color: #fff;}
+			
+			
+	.paper {
+		width: 125px;
+		height: 125px;
+		display: block;
+		background: url(../img/main/paper.png) no-repeat top left;
+		position: absolute;
+		top: 18px;
+		right: 18px;
+		z-index: 8;}
+		
+		.paper a { 
+			display: block;
+			width: 100%;
+			height: 90px;
+			background: url(../img/common/ir_img.gif) repeat top left;
+			position: absolute;
+			bottom: 0px;
+			left: 0px;}
+		
+
+.banner_wrap {
+	width: 1200px;
+	margin: 0px auto;
+	margin-top: -51px;
+	position: relative;
+	z-index: 3;}
+	
+.banner_wrap .bn_01 {
+	width: 100%;
+	height: 310px;
+	margin-bottom: 31px;}
+
+.banner_wrap .bn_01 li { position: relative; width: 289px; height: 100%; position: relative; float: left; margin-right: 15px;}	
+.banner_wrap .bn_01 li.list_03 { width: 288px;}
+.banner_wrap .bn_01 li.list_04 { margin-right: 0px;}
+.banner_wrap .bn_01 li a { width: 100%; height: 100%; display: block; position: relative;}
+.banner_wrap .bn_01 a span { display: block; width: 100%; height: 100%; background-color: #000; position: absolute; top: 0px; left: 0px; opacity: 0; filter: alpha(opacity=0); transition: all .3s;}
+.banner_wrap .bn_01 a:hover span { opacity: .3; filter: alpha(opacity=30); transition: all .3s;}
+
+.banner_wrap .bn_02 {
+	width: 100%;
+	height: 104px;
+	background: url(../img/main/banner_off.gif) no-repeat top left;}
+	
+.banner_wrap .bn_02 li { width: 300px; float: left;}	
+.banner_wrap .bn_02 li a { width: 100%; height: 104px; display: block; background: url(../img/common/ir_img.gif) repeat top left; }
+
+.banner_wrap .bn_01 li a.link { width: 100%; height: 600px; display: block; background: url(../img/common/ir_img.gif) repeat top left; position: absolute; bottom: 0px; left: 0px;}
+	
+.bg_wrap { width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 10; background: url(../img/common/pano_bg.png) repeat top left;}
+.bg_wrap a.close { width: 56px; height: 50px; display: block; position: absolute; top: 50px; left: 50%; margin-left: 560px; border:2px solid #fff; font-size: 40px; line-height: 48px; color: #fff; text-align: center; font-weight: bold; font-family:Verdana, Geneva, sans-serif;  transition: background-color .3s, color .3s;}
+.bg_wrap a.close:hover { background-color: #fff; color: #222; transition: background-color .3s, color .3s;}
+.movie_wrap { width: 1240px; height: 720px; position: absolute; top: 100px; left: 50%; margin-left: -620px;}
+
+
+#footer .admin {  top: 51px;}

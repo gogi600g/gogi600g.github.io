@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+@import "reset.css";
+@import "default.css";
+@import "base.css";
+@import "sub_base.css";
+
+/*커뮤니티*/
+
+.com .tab_wrap { width: 100%; height: 36px; margin-bottom: 30px;}
+
+.com .tab_wrap li {
+	width: 450px;
+	height: 36px;
+	float: left;}
+
+	.com .tab_wrap li a {
+		width: 100%;
+		height: 100%;
+		display: block;
+		background: url(../img/complex/com_tab_off.gif)}
+
+	.com .tab_wrap li a.on { background-image: url(../img/complex/com_tab_on.gif);}
+	
+	.com .tab_wrap li.list_02 a { background-position: -450px 0px;}
+
+/*조감도*/
+	
+.view .tab_wrap { width: 100%; height: 36px; margin-bottom: 30px;}
+
+.view .tab_wrap li {
+	width: 450px;
+	height: 36px;
+	float: left;}
+
+	.view .tab_wrap li a {
+		width: 100%;
+		height: 100%;
+		display: block;
+		background: url(../img/complex/view_tab_off.gif)}
+
+	.view .tab_wrap li a.on { background-image: url(../img/complex/view_tab_on.gif);}
+	
+	.view .tab_wrap li.list_02 a { background-position: -450px 0px;}
+
+/*배치도*/
+	
+.cha .tab_wrap { width: 100%; height: 36px; margin-bottom: 30px;}
+
+.cha .tab_wrap li {
+	width: 450px;
+	height: 36px;
+	float: left;}
+
+	.cha .tab_wrap li a {
+		width: 100%;
+		height: 100%;
+		display: block;
+		background: url(../img/complex/chart_tab_off.gif)}
+
+	.cha .tab_wrap li a.on { background-image: url(../img/complex/chart_tab_on.gif);}
+	
+	.cha .tab_wrap li.list_02 a { background-position: -450px 0px;}
+	
+.cha .tab_box { position: relative;}	
+	
+	.cha .btn {
+		width: 136px;
+		height: 35px;
+		display: block;
+		background: url(../img/common/ir_img.gif) repeat top left;
+		position: absolute;
+		top: 470px;
+		left: 0px;}
+		
+	.cha .btn2 {
+		width: 136px;
+		height: 35px;
+		display: block;
+		background: url(../img/common/ir_img.gif) repeat top left;
+		position: absolute;
+		top: 962px;
+		left: 0px;}
+
+/*시스템*/
+	
+.sys .tab_wrap { width: 100%; height: 38px; margin-bottom: 49px;}
+
+.sys .tab_wrap li {
+	width: 300px;
+	height: 38px;
+	float: left;}
+	
+/*.sys .tab_wrap li.list_02 { width: 215px;}	
+.sys .tab_wrap li.list_03 { width: 250px;}	
+.sys .tab_wrap li.list_04 { width: 230px;}	*/
+
+	.sys .tab_wrap li a {
+		width: 100%;
+		height: 100%;
+		display: block;
+		background: url(../img/complex/sys_tab_off.gif)}
+
+	.sys .tab_wrap li a.on { background-image: url(../img/complex/sys_tab_on.gif);}
+	
+	.sys .tab_wrap li.list_02 a { background-position: -300px 0px;}
+	.sys .tab_wrap li.list_03 a { background-position: -600px 0px;}
+	.sys .tab_wrap li.list_04 a { background-position: -900px 0px;}

@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+.popup_box {
+	float: left;
+	position: absolute;
+	z-index: 9;}
+	
+	.popup_box .btn {
+		width: 100px;
+		left: 50px;
+		background: url(../img/common/ir_img.gif) repeat top left;
+		display: block;
+		position: absolute;}
+		
+	.popup_box .close_btn {
+		width: 45px;
+		height: 45px;
+		display: block;
+		background: url(../img/common/ir_img.gif) repeat top left;
+		position: absolute;
+		top: 0px;
+		right: 0px;}
+
+	.popup_box .cookie_btn {
+		width: 100%;
+		height: 35px;
+		display: block;
+		background: url(../img/common/ir_img.gif) repeat top left;
+		position: absolute;
+		bottom: 0px;
+		left: 0px;}
