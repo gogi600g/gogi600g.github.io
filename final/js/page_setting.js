@@ -375,8 +375,47 @@ function _rolling3() {
 		});
 	};
 
+	$.warnPopup = function() {
+		var $popup = $('<div/>', {
+			css: {
+				position: 'fixed',
+				top: 10,
+				right: 10,
+				width: 215,
+				padding: 14,
+				zIndex: 100,
+				backgroundColor: '#ffde72',
+				borderRadius: 5
+			},
+			append: [
+				$('<p/>', {
+					css: {
+						fontFamily: 'sans-serif;',
+						fontSize: 11
+					},
+					html: [
+						'이곳은 ',
+						'<a href="http://hangdong-jeil.co.kr" target="_blank" style="text-decoration: underline;">',
+						'서울 항동지구 제일풍경채 웹사이트</a>에 ',
+						'게시된 자료를 보관하기 위한 목적으로 제작되었습니다.'
+					].join('')
+				}),
+				$('<p/>', {
+					css: {
+						marginTop: 5,
+						fontSize: 11,
+						color: '#9b812c'
+					},
+					text: '보관일: 2018년 4월 18일'
+				})
+			],
+			appendTo: document.body
+		});
+	};
+
 	$(document).ready(function() {
 		$('.prevent').preventLinks();
+		$.warnPopup();
 	});
 
 })(jQuery);
