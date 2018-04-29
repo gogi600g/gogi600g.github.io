@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <title>E-모델하우스</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/mh/styles/style.css">
+</head>
+<body>
+  <div id="container"> </div>
+  <script src="/code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="scripts/libpannellum.js"></script>
+  <script src="scripts/RequestAnimationFrame.js"></script>
+  <script src="scripts/pannellum.js"></script>
+  <script src="scripts/iscroll.js"></script>
+  <script>
+    $.fn.panorama = function(opts) {
+      var $this = this;
+
+      var $navigation = function(scenes, scene) {
+        var current;
+        var elemObj = {};
+
+        return $('<div/>', {
+          'class': scene,
+          append: $('<ul/>', {
+            append: function() {
+              $.each(scenes, function(scene, content) {
+
+                elemObj[scene] = $('<li/>', {
+                  'data-scene': scene,
+                  append: $('<a/>', {
+                    href: '#',
+                    text: content.name,
+                    click: function(e) {
+                      e.preventDefault();
+                      $this.mh.loadScene(scene);
+                    }
+                  })
+                })[0]
+              });
+
+              return $.map(elemObj, function(arr) {
+                return arr;
+              })
+            }
+          }),
+          on: {
+            scenechange: function(e, scene) {
+              var currentClass = 'current';
+
+              if (current) {
+                elemObj[current].classList.remove(currentClass);
+              }
+
+              elemObj[scene].classList.add(currentClass);
+              current = scene;
+            }
+          },
+          appendTo: $this
+        });
+      };
+
+      var $wrapper = function() {
+        return $('<div/>', {
+          appendTo: $this
+        });
+      }
+
+      var scrollers = function(elem) {
+        return new IScroll(elem, {
+          scrollX: true,
+          scrollY: false,
+          click: true,
+          eventPassthrough: true
+        });
+      };
+
+      var loadData = function(cb) {
+        $.getJSON(opts.data, function(data) {
+          cb(data);
+        });
+      };
+
+      $this.init = function() {
+        loadData(function(res) {
+          $this.navigation = $navigation(res.scenes, 'menu');
+          $this.map = $navigation(res.scenes, 'map')
+          $this.mh = pannellum.viewer($wrapper().get(0), res);
+
+          $this.mh.on('load', function() {
+            var scene = $this.mh.getScene();
+            $this.navigation.trigger('scenechange', scene);
+            $this.map.trigger('scenechange', scene);
+          });
+
+          var nav = scrollers($this.navigation[0]);
+        });
+      }
+
+      return $this.init();
+    }
+
+    document.addEventListener('touchstart', function() {}, false);
+
+    $('#container').panorama({
+      data: '/mh/data/data.json'
+    });
+
+    $(window).on('resize', function() {
+      $('body').css({
+        height:  window.innerHeight
+      });
+
+      setTimeout(function() {
+        window.scrollTo(0, 1);
+      }, 500)
+    });
+  </script>
+</body>
+</html>

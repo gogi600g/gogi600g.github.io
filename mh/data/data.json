@@ -1,0 +1,70 @@
+{
+    "default": {
+        "autoLoad": true,
+        "autoRotate": -0.5,
+        "orientationOnByDefault": true,
+        "keyboardZoom": false,
+        "disableKeyboardCtrl": true,
+        "compass": true,
+        "northOffset": 0,
+        "yaw": -10,
+        "firstScene": "livingroom",
+        "sceneFadeDuration": 2000,
+        "type": "cubemap",
+        "cubeMap": [
+            "pano_f.jpg",
+            "pano_r.jpg",
+            "pano_b.jpg",
+            "pano_l.jpg",
+            "pano_u.jpg",
+            "pano_d.jpg"
+        ]
+    },
+    "scenes": {
+        "livingroom": {
+            "order": 0,
+            "name": "거실",
+            "basePath": "/mh/photos/livingroom/"
+        },
+        "kitchen": {
+            "order": 1,
+            "name": "주방/식당",
+            "basePath": "/mh/photos/kitchen/"
+        },
+        "bedroom1": {
+            "order": 2,
+            "name": "침실1",
+            "basePath": "/mh/photos/bedroom1/"
+        },
+        "bedroom2": {
+            "order": 3,
+            "name": "침실2",
+            "basePath": "/mh/photos/bedroom2/"
+        },
+        "bedroom3": {
+            "order": 4,
+            "name": "침실3",
+            "basePath": "/mh/photos/bedroom3/"
+        },
+        "dressroom": {
+            "order": 5,
+            "name": "드레스룸",
+            "basePath": "/mh/photos/dressroom/"
+        },
+        "bathroom1": {
+            "order": 6,
+            "name": "욕실1",
+            "basePath": "/mh/photos/bathroom1/"
+        },
+        "bathroom2": {
+            "order": 7,
+            "name": "욕실2",
+            "basePath": "/mh/photos/bathroom2/"
+        },
+        "porch": {
+            "order": 8,
+            "name": "현관",
+            "basePath": "/mh/photos/porch/"
+        }
+    }
+}
